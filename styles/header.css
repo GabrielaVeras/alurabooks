@@ -76,6 +76,10 @@
   display: none;
 }
 
+.container__texto{
+  display: none;
+}
+
 @media screen and (min-width: 1024px){
 
   .container__titulo,
@@ -126,3 +130,32 @@
 }
 
 }
+
+
+@media screen and (min-width: 1728px){
+
+.container__titulo{
+  padding-right: 2em;
+}
+
+.container__link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.cabeçalho{
+  padding: 0 2em;
+}
+
+.opçoes{
+  margin-right: auto;
+}
+
+.container__texto{
+  display: block;
+}
+
+}
+
