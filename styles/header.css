@@ -8,6 +8,18 @@
   
 }
 
+.container__botao:checked ~ .container__rotulo > .cabeçalho__menu-hamburguer{
+  background-image: url("../img/menu_aberto.svg");
+}
+
+.container__botao:checked ~ .container__rotulo{
+  background-color: var(--azul-escuro);
+}
+
+.container__rotulo{
+  padding: 1em;
+}
+
 .cabeçalho{
   background-color: var(--branco);
   display: flex;
@@ -127,6 +139,23 @@
 
 .opçoes__botao{
   display: none;
+}
+
+.opçoes__botao:checked ~ .opçoes__rotulo > .opçoes__item{
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+}
+
+.opçoes__item{
+  padding: 2em 1em;
+}
+
+.lista-menu__item:hover{
+  background-color: var(--azul-escuro);
+}
+
+.lista-menu__item:hover >  .lista-menu__link{
+  -webkit-text-fill-color: var(--branco);
 }
 
 }
